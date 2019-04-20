@@ -1,6 +1,15 @@
-<div id="top-nav"></div>
-<div id="container" >
+<div id="container">
+  <div id="userInfo">
+    <h4>{{username}}</h4>
+    <a class='editButton' routerLink="/editprofile">Edit Profile</a>
+    <p>Name: {{name}}</p>
+    <p>Desc: {{description}}</p>
+    <p>Blog: {{blogLink}}</p>
+    <p>FB: {{facebookLink}}</p>
+    <p>Mail: {{eMail}}</p>
+  </div>
+
   <div class="card" *ngFor="let image of images">
     <div class="image" [style.background-image]="'url('+image+')'">
+    </div>
   </div>
-</div>

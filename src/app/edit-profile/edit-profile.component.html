@@ -1,0 +1,28 @@
+<h2>Nextagram</h2>
+<form id="form" [formGroup]="details" (ngSubmit)="onSubmit()">
+  <tr>
+    <td><label>Name: </label></td>
+    <td><input type="text" formControlName="name" /></td>
+  </tr>
+  <tr>
+    <td><label>Description: </label></td>
+    <td><input type="text" formControlName="description" /></td>
+  </tr>
+  <tr>
+    <td><label>Blog Link: </label></td>
+    <td><input type="url" formControlName="blogLink" /></td>
+  </tr>
+  <tr>
+    <td><label>Facebook Link: </label></td>
+    <td><input type="url" formControlName="facebookLink" /></td>
+  </tr>
+  <tr>
+    <td><label>E-mail: </label></td>
+    <td><input type="email" formControlName="eMail" /></td>
+  </tr>
+  <br>
+  <tr>
+    <td><input type="submit" (click)="addDetails()" /></td>
+    <td><input type="reset" /></td>
+  </tr>
+</form>
