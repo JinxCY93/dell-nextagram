@@ -1,6 +1,6 @@
 .image {
   width: 100%;
-  height: 100%;
+  height: 60%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -17,4 +17,14 @@
   text-align: right;
   color:black;
   float: right;
+}
+
+#like-tag{
+  width: 100%;
+}
+
+.like-button{
+  width:50%;
+  margin: 0;
+  display: inline-block
 }

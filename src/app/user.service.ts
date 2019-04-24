@@ -24,11 +24,11 @@ export class UserService {
   name = new BehaviorSubject<string>('testingname')
   description = new BehaviorSubject<string>('testing description')
   blogLink = new BehaviorSubject<string>('http://testingbloglink.com/')
-  facebookLink = new BehaviorSubject<string>('http://facebooklin.com/')
+  facebookLink = new BehaviorSubject<string>('http://facebooklink.com/')
   eMail = new BehaviorSubject<string>('testing@hotmail.com')
 
   details = new BehaviorSubject<string[]>([])
-
+  comments = new BehaviorSubject<string[]>([])
   constructor(private http: HttpClient) { }
 
   getUsers() {
@@ -66,4 +66,15 @@ export class UserService {
     tempDetails.push(newDetails)
     this.details.next(tempDetails)
   }
+
+  addComment(newComment) {
+    let commentTemp = this.comments.getValue()
+    commentTemp.push(newComment)
+    this.comments.next(commentTemp)
+  }
+
+  getComment() {
+    return this.comments
+  }
+
 }

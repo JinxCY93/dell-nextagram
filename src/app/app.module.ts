@@ -8,10 +8,11 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
-import { EditProfileComponent } from './edit-profile/edit-profile.component'
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { CommentSessionComponent } from './comment-session/comment-session.component'
 
 @NgModule({
-  declarations: [AppComponent, UserListComponent, UserDetailComponent, UserCardComponent, SignupPageComponent, EditProfileComponent],
+  declarations: [AppComponent, UserListComponent, UserDetailComponent, UserCardComponent, SignupPageComponent, EditProfileComponent, CommentSessionComponent],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

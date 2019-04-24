@@ -5,12 +5,14 @@ import { Component, OnInit, Input } from '@angular/core'
   templateUrl: './user-card.component.html',
   styleUrls: ['./user-card.component.scss'],
 })
+
 export class UserCardComponent implements OnInit {
   @Input() id: number
   @Input() username: string
   @Input() profileImage: string
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
+
 }

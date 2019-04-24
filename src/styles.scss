@@ -3,6 +3,7 @@
 body {
   margin: 0px;
   height: 100vh;
+  font-family: Consolas;
 }
 
 #top-nav {
@@ -45,7 +46,15 @@ body {
 
 .card {
   background-color: lightgoldenrodyellow;
-  height: 150px;
+  height: 200px;
+  width: 30%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.card2 {
+  background-color: lightgoldenrodyellow;
+  height: 50vh;
   width: 30%;
   margin-top: 10px;
   padding: 10px;
